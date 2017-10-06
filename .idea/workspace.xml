@@ -89,6 +89,11 @@
             <path>
               <item name="codeup-design" type="b2602c69:ProjectViewProjectNode" />
               <item name="codeup-design" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeup-design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codeup-design" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,12 +223,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507318082070</updated>
-      <workItem from="1507318083693" duration="340000" />
+      <workItem from="1507318083693" duration="507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340000" />
+    <option name="totallyTimeSpent" value="507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="6" />
