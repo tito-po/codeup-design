@@ -9,6 +9,19 @@
     margin-right: 15px;
 }
 
+.cat-label {
+    padding-left: 10px;
+}
+
+.cat-select {
+    padding-left: 15px;
+    padding-top: 6px;
+}
+
+#cat-label-xs, #cat-label-sm {
+    text-align: left;
+}
+
 /*xs*/
 @media screen and (max-width: 767px) {
     .item-listing-label {
@@ -42,6 +55,10 @@
         float: right;
         margin-top: 12px;
         margin-right: 15px;
+    }
+
+    .cat-select {
+        padding-left: 10px;
     }
 }
 

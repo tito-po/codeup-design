@@ -55,19 +55,28 @@
             <div class="container">
                 <h1 class="text-center">List you item with us today!</h1>
                 <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Create New Listing</a></p>
-
             </div>
         </div>
-
         <form class="hidden-lg hidden-xl well form-horizontal" action=" " method="post"  id="contact_form">
             <fieldset>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Upload Product Image</label>
+                    <div class="col-md-2 inputGroupContainer">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Upload from disk
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-open" aria-hidden="true"></span> Link from google
+                        </button>
+                    </div>
+                </div>
                 <!-- Text input-->
                 <div class="form-group">
                     <label class="col-md-4 control-label">Product Name</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                            <input  name="prod_name" placeholder="i.e. IPhone 8 plus" class="form-control"  type="text">
                         </div>
                     </div>
                 </div>
@@ -76,8 +85,8 @@
                     <label class="col-md-4 control-label" >Product Price</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                            <input name="prod_price" placeholder="i.e. 199.99" class="form-control"  type="text">
                         </div>
                     </div>
                 </div>
@@ -117,7 +126,7 @@
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                            <input name="city" placeholder="city" class="form-control"  type="text">
+                            <input name="city" placeholder="City" class="form-control"  type="text">
                         </div>
                     </div>
                 </div>
@@ -194,36 +203,194 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group hidden-xs hidden-sm">
                     <label class="col-md-4 control-label">Category</label>
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="input-group col-md-6">
-                                <input type="checkbox" aria-label="...">
-                                <label for=""> something</label>
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category1-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category1-md"> Appliances</label>
+                                </div><!-- /input-group -->
                             </div>
-                            <div class="input-group col-md-6">
-                                <span class="input-group-addon">
-                                    <input type="checkbox" aria-label="...">
-                                    something
-                                </span>
-                            </div><!-- /input-group -->
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category2-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category2-md"> Home Theater</label>
+                                </div><!-- /input-group -->
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="input-group col-md-6">
-                                <span class="input-group-addon">
-                                    <input type="checkbox" aria-label="...">
-                                    something
-                                </span>
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category3-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category3-md"> Laptop</label>
+                                </div>
                             </div>
-                            <div class="input-group col-md-6">
-                                <span class="input-group-addon">
-                                    <input type="checkbox" aria-label="...">
-                                    something
-                                </span>
-                            </div><!-- /input-group -->
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category4-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category4-md"> Desktop</label>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category5-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category5-md"> Video Games</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category6-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category6-md"> Camera</label>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category7-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category7-md"> Headphones</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group cat-select">
+                                    <input id="category8-md" type="checkbox" aria-label="...">
+                                    <label class="cat-label" for="category8-md"> Speakers</label>
+                                </div><!-- /input-group -->
+                            </div>
                         </div>
                     </div><!-- /.col-lg-6 -->
+                </div>
+
+                <div class="form-group visible-sm-block">
+                    <label class="col-sm-12 control-label" id="cat-label-sm">Category</label>
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <div class="input-group cat-select">
+                                <input id="category1-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category1-sm"> Appliances</label>
+                            </div><!-- /input-group -->
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="input-group cat-select">
+                                <input id="category2-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category2-sm"> Home Theater</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <div class="input-group cat-select">
+                                <input id="category3-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category3-sm"> Laptop</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="input-group cat-select">
+                                <input id="category4-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category4-sm"> Desktop</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <div class="input-group cat-select">
+                                <input id="category5-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category5-sm"> Video Games</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="input-group cat-select">
+                                <input id="category6-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category6-sm"> Camera</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <div class="input-group cat-select">
+                                <input id="category7-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category7-sm"> Headphones</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="input-group cat-select">
+                                <input id="category8-sm" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category8-sm"> Speakers</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group visible-xs-block">
+                    <label class="col-xs-12 control-label" id="cat-label-xs">Category</label>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category1-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category1-xs"> Appliances</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category2-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category2-xs"> Home Theater</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category3-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category3-xs"> Laptop</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category4-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category4-xs"> Desktop</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category5-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category5-xs"> Video Games</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category6-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category6-xs"> Camera</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category7-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category7-xs"> Headphones</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="input-group cat-select">
+                                <input id="category8-xs" type="checkbox" aria-label="...">
+                                <label class="cat-label" for="category8-xs"> Speakers</label>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
                 </div>
                 <!-- Button -->
                 <div class="form-group">
@@ -240,13 +407,28 @@
             <fieldset>
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-1">
+                        <div class="form-group">
+                            <label class="control-label">Upload Product Image</label>
+                            <div class="inputGroupContainer">
+                                <button type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Upload from disk
+                                </button>
+                                <button type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-open" aria-hidden="true"></span> Link from google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-1">
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="control-label">First Name</label>
+                            <label class="control-label">Product Name</label>
                             <div class="inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                                    <input  name="prod_name" placeholder="i.e. IPhone 8 Plus" class="form-control"  type="text">
                                 </div>
                             </div>
                         </div>
@@ -254,11 +436,25 @@
                     <div class="col-lg-4 col-lg-offset-2">
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="control-label">Address</label>
+                            <label class="control-label">Product Price</label>
                             <div class="inputGroupContainer">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="address" placeholder="Address" class="form-control" type="text">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                    <input name="prod-price" placeholder="199.99" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <!-- Text area -->
+                        <div class="form-group">
+                            <label class="control-label">Description</label>
+                            <div class="inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    <textarea class="form-control" name="comment"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -268,11 +464,11 @@
                     <div class="col-lg-4 col-lg-offset-1">
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="control-label" >Last Name</label>
+                            <label class="control-label" >Address</label>
                             <div class="inputGroupContainer">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="last_name" placeholder="Address" class="form-control"  type="text">
                                 </div>
                             </div>
                         </div>
@@ -284,26 +480,14 @@
                             <div class="inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="city" placeholder="city" class="form-control"  type="text">
+                                    <input name="city" placeholder="City" class="form-control"  type="text">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Text input-->
                     <div class="col-lg-4 col-lg-offset-1">
-                        <div class="form-group">
-                            <label class="control-label">E-Mail</label>
-                            <div class="inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-2">
                         <!-- Select Basic -->
                         <div class="form-group">
                             <label class="control-label">State</label>
@@ -368,6 +552,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label">Zip Code</label>
+                            <div class="inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-1">
@@ -383,27 +579,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-lg-offset-2">
-                        <!-- Text input-->
                         <div class="form-group">
-                            <label class="control-label">Zip Code</label>
+                            <label class="control-label">E-Mail</label>
                             <div class="inputGroupContainer">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <!-- Text area -->
-                        <div class="form-group">
-                            <label class="control-label">Message</label>
-                            <div class="inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                    <textarea class="form-control" name="comment"></textarea>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
                                 </div>
                             </div>
                         </div>
