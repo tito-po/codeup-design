@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/codeup-design.css">
+    <link rel="stylesheet" href="css/potister.css">
 </head>
 <body>
 
@@ -55,39 +55,58 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1>Potister</h1>
+            <h1 class="text-center">Potister</h1>
             <p class="text-center">Start selling stuff.</p>
         </div>
     </div>
 
     <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                <form class="form-register">
+                    <h2 class="form-register-heading text-center">Sign Up Below</h2>
+                    <p class="text-center">Please fill out the information below so we can create your account.</p><br>
 
-        <form class="form-register">
-            <h2 class="form-register-heading">Sign Up Below</h2>
-            <p class="text-center">Please fill out the information below so we can create your account.</p><br>
+                    <label for="fullName" class="sr-only">Full Name</label>
+                    <input type="name" id="fullName" class="form-control" placeholder="Full name" required> <br>
 
-            <label for="fullName" class="sr-only">Full Name</label>
-            <input type="name" id="fullName" class="form-control" placeholder="Full name" required> <br>
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
 
+                    <label for="userName" class="sr-only">User name</label>
+                    <input type="user" id="userName" class="form-control" placeholder="User Name" required><br>
 
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
 
+                    <label for="confirmPassword" class="sr-only">Confirm Password</label>
+                    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required><br>
 
-
-            <label for="userName" class="sr-only">User name</label>
-            <input type="user" id="userName" class="form-control" placeholder="User Name" required><br>
-
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
-
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>
+                                <input type="checkbox" value="remember-me"> I agree to the <a href="">Terms & Conditions</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>
+                                <input type="checkbox" value="remember-me" checked> Sign me up for the newsletter!
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+                </form>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
-        </form>
+        </div>
+
+        <hr>
+
+        <footer>
+            &copy; 2017 Tito & Po Co.
+        </footer>
 
     </div> <!-- /container -->
 
