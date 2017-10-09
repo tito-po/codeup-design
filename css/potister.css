@@ -75,3 +75,12 @@
         margin-right: 15px;
     }
 }
+
+
+
+
+
+/* Carousel Styling */
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
