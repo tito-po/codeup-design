@@ -1,3 +1,35 @@
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+
+
+
+h1, h2, h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E5E5E5;
+    line-height: 1.5;
+}
+
+nav {
+    background-color: #242F40 !important;
+}
+nav li a{
+    color: white !important;
+}
+.navbar-brand {
+    font-size: 3.2em;
+    color: #CCA43B !important;
+    font-family: 'Permanent Marker', cursive;
+}
+.jumbotron {
+    background-color: #CCA43B;
+}
+
 .item-listing-label {
     float: left;
     margin-left: 5px;
