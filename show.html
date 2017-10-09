@@ -9,75 +9,242 @@
     <link rel="stylesheet" href="css/potister.css">
 </head>
 <body>
-
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Potister</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="listing.html">Listing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <form class="navbar-form navbar-left">
-                <button type="submit" class="btn btn-default">
-                    <span class="glyphicon glyphicon-list"></span>
-                    List Your Product!
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-            </form>
-            <form class="navbar-form navbar-right">
-                <button type="submit" class="btn btn-default">
-                    <span class="glyphicon glyphicon-user"></span>
-                    Login
-                </button>
-                <button type="submit" class="btn btn-default">
-                    <span class="glyphicon glyphicon-check"></span>
-                    Sign Up
-                </button>
-            </form>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+                <a class="navbar-brand" href="index.html">Potister</a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="listing.html">Listing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-list"></span>
+                        List Your Product!
+                    </button>
+                </form>
+                <form class="navbar-form navbar-right">
+                    <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Login
+                    </button>
+                    <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-check"></span>
+                        Sign Up
+                    </button>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="visible-xs-block visible-sm-block">
+
+    </div>
     <div class="row">
-        <div class="col-lg-12">
-
-        <img src="./assets/images/apple-ipad.jpg" alt="ipad for sale" class="show-listing img-rounded img-responsive">
+        <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
+            <img src="./assets/images/apple-ipad.jpg" alt="ipad for sale" class="show-listing img-rounded img-responsive" id="product-image-show">
+        </div>
+        <div class="col-md-4 col-md-offset-1 visible-md-block">
+            <h3>iPad 2</h3>
+            <p>Seller: <a href="">Potister.com</a></p>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="colorMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Choose Color
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="colorMenu">
+                    <li><a href="#">Rose Gold</a></li>
+                    <li><a href="#">Black</a></li>
+                    <li><a href="#">Space Gray</a></li>
+                    <li><a href="#">Silver</a></li>
+                </ul>
+            </div>
+            <h3>$199.99</h3>
+            <p>
+                <a class="btn btn-primary" href="#" role="button">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    Add To Cart
+                </a>
+                <a class="btn btn-success" href="#" role="button">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Save
+                </a>
+            </p>
+            <p>
+                <a class="btn btn-default" href="#" role="button">
+                    <span class="glyphicon glyphicon-user"></span>
+                    Contact Seller
+                </a>
+            </p>
         </div>
     </div>
-
-<div class="row marketing">
-    <div class="col-lg-12">
-        <h4>Subheading</h4>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Contact Seller</a></p>
-
-
+    <div class="row marketing">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="visible-xs-block visible-sm-block">
+                <h3>iPad 2</h3>
+                <p>Seller: <a href="">Potister.com</a></p>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="colorMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Choose Color
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="colorMenu">
+                        <li><a href="#">Rose Gold</a></li>
+                        <li><a href="#">Black</a></li>
+                        <li><a href="#">Space Gray</a></li>
+                        <li><a href="#">Silver</a></li>
+                    </ul>
+                </div>
+                <h3>$199.99</h3>
+                <p>
+                    <a class="btn btn-primary" href="#" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        Add To Cart
+                    </a>
+                    <a class="btn btn-success" href="#" role="button">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        Save
+                    </a>
+                </p>
+                <p>
+                    <a class="btn btn-default" href="#" role="button">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Contact Seller
+                    </a>
+                </p>
+            </div>
+            <br>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#details" aria-controls="snc" role="tab" data-toggle="tab">Details</a></li>
+                <li role="presentation"><a href="#specs" aria-controls="snc" role="tab" data-toggle="tab">Specifications</a></li>
+                <li role="presentation"><a href="#reviews" aria-controls="snc" role="tab" data-toggle="tab">Reviews</a></li>
+            </ul>
+            <div class="tab-content clearfix">
+                <div role="tabpanel" class="tab-pane active" id="details">
+                    <br>
+                    <!-- Size and crust content area -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Product Details</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>Description</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus distinctio doloremque ea est expedita impedit inventore ipsum laudantium molestias, neque perferendis perspiciatis, qui rem sint sit suscipit vel vero!</p>
+                            <hr>
+                            <h4>Date Posted</h4>
+                            <p>10/9/2017</p>
+                            <hr>
+                            <h4>Available Colors</h4>
+                            <ul>
+                                <li>Rose Gold</li>
+                                <li>Black</li>
+                                <li>Space Gray</li>
+                                <li>Silver</li>
+                            </ul>
+                            <hr>
+                            <h4>Location</h4>
+                            <p>123 Lane St. Unit 456</p>
+                            <p>Funky Town, USA 12345</p>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button type="button" class="btn btn-primary">
+                                Specifications
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="specs">
+                    <br>
+                    <!-- Size and crust content area -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Product Specifications</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>Model Name</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus distinctio doloremque ea est expedita impedit inventore ipsum laudantium molestias, neque perferendis perspiciatis, qui rem sint sit suscipit vel vero!</p>
+                            <hr>
+                            <h4>Date Released</h4>
+                            <p>10/9/2017</p>
+                            <hr>
+                            <h4>Processor</h4>
+                            <p>Intel i5</p>
+                            <hr>
+                            <h4>Memory</h4>
+                            <p>4GB RAM</p>
+                            <hr>
+                            <h4>Disk Space</h4>
+                            <p>128 GB</p>
+                            <hr>
+                            <h4>Screen Dimensions</h4>
+                            <p>13" x 16"</p>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                Details
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Reviews
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="reviews">
+                    <br>
+                    <!-- Size and crust content area -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Product Buyer Reviews</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3>
+                                <span class="glyphicon glyphicon-thumbs-down"></span>
+                                squirrel_muncher
+                            </h3>
+                            <h5><em>posted less than one day ago</em></h5>
+                            <p>"Terrible product, never buying this again, the product owner is a complete scam. BEWARE!"</p>
+                            <hr>
+                            <h3>
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                                booty_trap
+                            </h3>
+                            <h5><em>posted about a week ago</em></h5>
+                            <p>"Although the apples were not included, the product itself was okay. Would probably buy again..."</p>
+                            <hr>
+                            <h3>
+                                <span class="glyphicon glyphicon-thumbs-down"></span>
+                                gr3gry_90
+                            </h3>
+                            <h5><em>posted 2 days ago</em></h5>
+                            <p>"WHERE ARE THE APPLES!!!!????? #liar #noapples #givememymoney"</p>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                Specifications
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-
-</div> <!-- /container -->
-
-
-
-
-
-
-
-
-
-
-
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

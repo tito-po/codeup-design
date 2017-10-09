@@ -22,6 +22,10 @@
     text-align: left;
 }
 
+#product-image-show {
+    width: 100%;
+}
+
 /*xs*/
 @media screen and (max-width: 767px) {
     .item-listing-label {
