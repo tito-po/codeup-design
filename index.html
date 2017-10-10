@@ -35,20 +35,105 @@
                     </button>
                 </form>
                 <form class="navbar-form navbar-right">
-                   <button  type="submit" class="btn btn-default">
-                       <a href="login.html" target="_blank">
-                        <span class="glyphicon glyphicon-user"></span>
-                       <span class="hidden-xs hidden-sm">Login</span>
-                       </a>
-                    </button>
 
-                    <button type="submit" class="btn btn-default">
-                        <a href="register.html" target="_blank">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="hidden-xs hidden-sm">Login</span>
+                    </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
                         <span class="glyphicon glyphicon-check"></span>
                         <span class="hidden-xs hidden-sm">Sign Up</span>
-                        </a>
                     </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel2">Login</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Main jumbotron for a primary marketing message or call to action -->
+                                    <div class="jumbotron">
+                                        <div class="container">
+                                            <h1 class="text-center">Member Login</h1>
+                                        </div>
+                                    </div>
+                                    <form class="form-signin">
+                                        <h4 class="form-signin-heading">Please sign in</h4>
+                                        <label for="inputEmail" class="sr-only">Email address</label>
+                                        <input type="email" id="inputEmail2" class="form-control" placeholder="Email address" required autofocus>
+                                        <label for="inputPassword" class="sr-only">Password</label>
+                                        <input type="password" id="inputPassword2" class="form-control" placeholder="Password" required>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="remember-me"> Remember me
+                                            </label>
+                                        </div>
+                                        <hr>
+                                        <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+                                        <button class="btn btn-success btn-block" type="submit">Create Account</button>
+                                    </form>
+                                </div>
+                            </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Main jumbotron for a primary marketing message or call to action -->
+                                    <div class="jumbotron">
+                                        <div class="container">
+                                            <h1 class="text-center">Potister</h1>
+                                            <p class="text-center">Start selling stuff.</p>
+                                        </div>
+                                    </div>
+                                    <form class="form-register">
+                                        <h2 class="form-register-heading text-center">Sign Up Below</h2>
+                                        <p class="text-center">Please fill out the information below so we can create your account.</p><br>
 
+                                        <label for="fullName" class="sr-only">Full Name</label>
+                                        <input type="name" id="fullName" class="form-control" placeholder="Full name" required> <br>
+
+                                        <label for="inputEmail" class="sr-only">Email address</label>
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
+
+                                        <label for="userName" class="sr-only">User name</label>
+                                        <input type="user" id="userName" class="form-control" placeholder="User Name" required><br>
+
+                                        <label for="inputPassword" class="sr-only">Password</label>
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+
+                                        <label for="confirmPassword" class="sr-only">Confirm Password</label>
+                                        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required><br>
+
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label>
+                                                    <input type="checkbox" value="remember-me"> I agree to the <a href="">Terms & Conditions</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label>
+                                                    <input type="checkbox" value="remember-me" checked> Sign me up for the newsletter!
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
